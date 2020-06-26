@@ -14,11 +14,11 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <h1 class="logo">McKevitt Web Design</h1>
+            <a href="index.html"><h1 class="logo">McKevitt Web Design</h1></a>
             <ul class="nav">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#programming">Programming</a></li>
                 <li><a href="#portfolio">Contact</a></li>
             </ul>
         </div>
@@ -48,6 +48,85 @@
         </div>
     </section>
 
+    <!-- Timeline -->
+
+    <div class="timeline-title">
+        <h1>My Experience</h1>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-container timeline-left">
+            <div class="timeline-content">
+                <h2>2020 - Present</h2>
+                <p>I work currently as a Front End Software Engineer for a runway company named "Miss Fashion Week". I work with coding websites using HTML, CSS, and JavaScript, and I fix existing issues with their computer systems. 
+                    This job has given me experience with Wordpress, Vue.js, and other front end frameworks that are used to build and debug websites. 
+                </p>
+            </div>
+        </div>
+        <div class="timeline-container timeline-right">
+            <div class="timeline-content">
+                <h2>2020 - Present</h2>
+                <p>Currently, I work as the sole Web Developer for "RaiseYourVoice", a company that highlights the voices of contributors through the publishing of socially relevant narratives. 
+                    With this company, I am using HTML, CSS, and JavaScript to recreate and optimize their existing website while they expand as a company. I am not using any framework, but rather coding from the ground up 
+                    to allow them complete customizability over every aspect of their new website. 
+                </p>
+            </div>
+        </div>
+        <div class="timeline-container timeline-left">
+            <div class="timeline-content">
+                <h2>2019 - Present</h2>
+                <p>In 2019, I began a web service called "Road To Ivy League" that helps students get into top colleges by providing tips regarding how to navigate high school effectively, and services to help students perform better on tests and in classes. 
+                    As the sole Web Developer for this service, I used HTML, CSS, and JavaScript with Bootstrap to create a response website that operates cleanly on any variety of screen sizes. 
+                </p>
+            </div>
+        </div>
+        <div class="timeline-container timeline-right timeline-bottompadding">
+            <div class="timeline-content">
+                <h2>2019</h2>
+                <p>In 2019, I built a photo gallery website for a small company named FaithFamilyDesigns based out of McKinney, Texas, to help advertise items for sell and increase sales. 
+                    This website was built with pure HTML and CSS, and no external framework. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- END TIMELINE-->
+
+    <!-- NAV SECTION -->
+
+    <section class="section-d" id="navsection">
+        <!--3 grid items (rows) -->
+        
+        <h1>What's next?</h1>
+
+        <a href="javascript:void(0);" id="navsection-btn" class="btn-dropdown rotate" onclick="switchNav()"><i class="fa fa-angle-down fa-3x"></i></a>
+        <div class="navsection-container" id="navsection-container">
+            <!--columns -->
+            <div class="navsection-item">
+                <a href="#" id="navsectionItem1" class="nsi-sm1"><span></span></a>
+                <a href="#" class="nsi-sm">About</a>
+            </div>
+            <div class="navsection-item">
+                <a href="#" id="navsectionItem2" class="nsi-sm2"><span></span></a>
+                <a href="#" class="nsi-sm">Portfolio</a>
+            </div>
+            <div class="navsection-item">
+                <a href="#" id="navsectionItem3" class="nsi-sm3"><span></span></a>
+                <a href="#" class="nsi-sm">Programming</a>
+            </div>
+            <div class="navsection-item">
+                <a href="#" id="navsectionItem4" class="nsi-sm4"><span></span></a>
+                <a href="#" class="nsi-sm">Contact</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- END NAV SECTION-->
+
     <!-- Gallery -->
     <!--<section class="section-c">
         <div class="gallery">
@@ -61,6 +140,7 @@
     </section>-->
     
 
+
     <!-- Footer -->
     <footer class="section-footer">
         <div class="container">
@@ -72,7 +152,7 @@
                 <a href="https://youtube.com">
                 <i class="fab fa-youtube fa-2x"></i>
                 </a>
-                <a href="https://instagram.com">
+                <a href="https://www.instagram.com/ericmckevitt/">
                 <i class="fab fa-instagram fa-2x"></i>
                 </a>
             </div>
@@ -116,6 +196,14 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/navsection.js"></script>
+
+    <script text="text/javascript">
+        $(".rotate").click(function () {
+            $(this).toggleClass("down");
+        })
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/simple-lightbox.min.js"></script>
