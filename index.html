@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f0970786f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/simple-lightbox.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <title>McKevitt WebDesign</title>
+</head>
+<body id="home">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">McKevitt Web Design</h1>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Showcase -->
+    <!--   -->
+    <section class="section-a">
+        <div class="container">
+            <div>
+                <h1>Hi, I'm Eric. </h1>
+                <h3>I'm a Front End Software Engineer in Dallas, Texas. </h3>
+                <a href="#" class="btn">More About Me</a>
+            </div>
+            <img src="img/portrait2.png" alt="">
+        </div>
+    </section>
+
+    <!-- Overlay Text -->
+    <!--<section class="section-b">
+        <div class="overlay">
+            <div class="section-b-inner">
+                <h3>Loud & Clear</h3>
+                <h2>Classic Design with Premium Build</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nam consequuntur corporis odio totam fuga similique, assumenda expedita ut mollitia quasi? Recusandae eligendi vero eos deserunt ab dolore asperiores. Rem.</p>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Gallery -->
+    <!--<section class="section-c">
+        <div class="gallery">
+            <a href="img/gal2323.jpg" class="big"><img src="img/gal2323.jpg" alt=""></a>
+            <a href="img/gal39834.jpg"><img src="img/gal39834.jpg" alt=""></a>
+            <a href="img/gal43884.jpg"><img src="img/gal43884.jpg" alt=""></a>
+            <a href="img/section-b.jpg"><img src="img/section-b.jpg" alt=""></a>
+            <a href="img/gal4545.jpg"><img src="img/gal4545.jpg" alt=""></a>
+            <a href="img/gal74744.jpg"><img src="img/gal74744.jpg" alt=""></a>
+        </div>
+    </section>-->
+    
+
+    <!-- Footer -->
+    <footer class="section-footer">
+        <div class="container">
+            <div class="footer-col">
+                <h2>Find Me On Social Media</h2>
+                <a href="https://twitter.com">
+                <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://youtube.com">
+                <i class="fab fa-youtube fa-2x"></i>
+                </a>
+                <a href="https://instagram.com">
+                <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+            <div class="footer-compinfo">
+                <h3>Company Info</h3>
+                <ul>
+                    <li href="#">Reach Me At: </li>
+                    <li href="#">+1 (972)979-5460</li>
+                    <li href="#">erictmckevitt@gmail.com</li>
+                    <li href="#">Dallas, TX</li>
+                </ul>
+            </div>
+            <div class="footer-color">
+                <h3>Featured Projects</h3>
+                <ul>
+                    <li href="#">Lorem ipsum dolor.</li>
+                    <li href="#">Lorem ipsum dolor.</li>
+                    <li href="#">Lorem, ipsum dolor.</li>
+                    <li href="#">Lorem ipsum dolor.</li>
+                </ul>
+            </div>
+            <div class="footer-color">
+                <h3>Subscribe</h3>
+                <p>Be the first to hear about deals on custom websites and all things web development. </p>
+                <form name="email-form" method="POST" data-netlify="true" class="footer-color">
+                    <div class="email-form footer-color">
+                        <span class="form-control-wrap footer-color">
+                            <input type="email" 
+                                name="email" 
+                                id="email" 
+                                size="40" 
+                                class="form-control" 
+                                placeholder="Enter Email"
+                            />
+                        </span>
+                        <button type="submit" class="form-control submit">
+                            <i class="fas fa-chevron-right icon-color"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script>
+        $(function() {
+            const $gallery = $('.gallery a').simpleLightbox();
+        });
+    </script>
+</body>
+</html>
