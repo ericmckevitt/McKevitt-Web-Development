@@ -396,6 +396,10 @@ box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.71);
         font-size: 3rem;
     }
 
+    .section-b-inner p {
+        font-size: 1.2rem;
+    }
+
     .section-c .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -423,6 +427,10 @@ box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.71);
         text-align: center;
     }
 
+    .section-footer .container div:first-child a {
+        font-size: 14px;
+    }
+
     .section-footer .container div:nth-child(2) {
         display: none;
     }
@@ -432,6 +440,10 @@ box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.71);
     }
 
     .section-footer .container div:last-child {
-        height:200px;
+        height:250px;
+    }
+
+    .section-footer .container div:last-child h3 {
+        font-size:2rem;
     }
 }
