@@ -644,7 +644,7 @@ box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.71);
     color:white;
     display: flex;
     flex-direction: column;
-    padding-top: 0;
+    padding-top: 50;
 }
 
 .section-e .perks .perk-item .fa-tachometer-alt {
@@ -748,6 +748,51 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     background-color: var(--secondary-color);
 }
+
+/* Section G */ 
+
+.section-g {
+    padding-top: 30px;
+}
+
+.section-g .container h1 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.section-g .section-g-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.section-g-parent {
+    width: 80%;
+    justify-self: center;
+    align-items: center;
+}
+
+.section-g-child {
+    display: flex;
+    padding: 20px 0;
+}
+
+.section-g .container .section-g-parent .section-g-child .fa-check {
+    color: var(--primary-color);
+    padding-left: 15px;
+    padding-top: 6px;
+}
+
+.section-g .container .section-g-parent .section-g-child p {
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 15px;
+}
+
 
 /* Media Query */
 
