@@ -10,6 +10,8 @@ function switchNav() {
     var navItem3 = document.getElementById("navsectionItem3");
     var navItem4 = document.getElementById("navsectionItem4");
 
+    var heading = document.getElementById("navsection-header");
+    heading_def = heading.style.paddingTop;
 
     //CONDITIONS
 
@@ -24,12 +26,16 @@ function switchNav() {
 
     if (navHeight !== "120px") {
         //EXPAND
+        document.getElementById("navsection-header").innerHTML = "";
+
         document.getElementById("navsectionItem1").innerHTML = "About";
         document.getElementById("navsectionItem2").innerHTML = "Portfolio";
         document.getElementById("navsectionItem3").innerHTML = "Programming";
         document.getElementById("navsectionItem4").innerHTML = "Contact";
     } else {
         //RETRACT
+        document.getElementById("navsection-header").innerHTML = "What's Next?";
+
         document.getElementById("navsectionItem1").innerHTML = "";
         document.getElementById("navsectionItem2").innerHTML = "";
         document.getElementById("navsectionItem3").innerHTML = "";
