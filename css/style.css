@@ -2,6 +2,7 @@
     --primary-color: #4A5568;
     --primary-color-bold: #536686;
     --secondary-color: #ad3c28;
+    --secondary-color-bold: #cf3e24;
     --overlay-color: rgba(0,0,0,0.7);
 
     --custom-color1: rgb(121, 121, 121);
@@ -27,6 +28,15 @@ body {
     color: #333;
     font-size: 1.1rem;
 
+}
+
+.shadow-nav {
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.2); 
+box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.2);
+}
+
+.shadow-nav-padding {
+    padding-top: 30px;
 }
 
 h1, h2, h3, h4 {
@@ -541,19 +551,19 @@ box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.71);
 
 
 #navsectionItem1 {
-    
+    font-size:1.8rem;
 }
 
 #navsectionItem2 {
-    
+    font-size:1.8rem;
 }
 
 #navsectionItem3 {
-    
+    font-size:1.8rem;
 }
 
 #navsectionItem4 {
-    
+    font-size:1.8rem;
 }
 
 .section-d .navsection-container .navsection-item .nsi-sm {
@@ -735,6 +745,11 @@ progress {
     border: 0;
     height: 2.5em;
     width: 100%;
+
+}
+
+progress:hover {
+    color: var(--secondary-color-bold);
 }
 
 progress::-webkit-progress-bar {
@@ -743,10 +758,20 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
     background-color: var(--secondary-color);
+    transition: 300ms ease-in-out;
+}
+
+progress::-webkit-progress-value:hover {
+    background-color: var(--secondary-color-bold);
+    transition: 300ms ease-in-out;
 }
 
 progress::-moz-progress-bar {
     background-color: var(--secondary-color);
+}
+
+progress::-moz-progress-bar:hover {
+    background-color: var(--secondary-color-bold);
 }
 
 /* Section G */ 
@@ -792,6 +817,98 @@ progress::-moz-progress-bar {
     font-size: 1.3rem;
     padding-left: 15px;
 }
+
+/* CONTACT */
+
+.contact-section {
+    padding: 100px 0;
+    box-sizing: border-box;
+
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.2); 
+box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.2);
+}
+
+.contact-section h1 {
+    background-color: transparent;
+    text-align: center;
+    font-size: 3rem;
+    padding: 35px 0px 
+}
+
+.container-contact {
+    border-radius: 7px;
+    padding: 20px;
+    width: 65%;
+    margin: auto;
+    background-color: lightgray;
+
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 4px;
+    resize: vertical;
+    color: black;
+    background-color: white;
+    
+}
+
+.select-items {
+    background-color: red;
+}
+
+label {
+    padding: 12px 12px 12px 25px;
+    display: inline-block;
+    background-color: transparent;
+    
+}
+
+input[type=submit] {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    transition: 200ms ease-in-out;
+}
+
+input[type=submit]:hover {
+    background-color: var(--secondary-color-bold);
+    transition: 200ms ease-in-out;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    background-color: lightgray;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    background-color: lightgray;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: lightgray;
+}
+
+.row {
+    background-color: lightgray;
+}
+
+
 
 
 /* Media Query */
@@ -939,7 +1056,17 @@ progress::-moz-progress-bar {
     .section-e .perks{
         grid-template-columns: repeat(3,1fr);
     }
+
+    /* Contact */
+
+    .contact-section label {
+        padding-left: 0;
+    }
     
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 
     /*Footer*/
 
