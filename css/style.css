@@ -285,6 +285,11 @@ box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.71);
 
 .section-footer .container li {
     background-color: #4A5568;
+    color:white;
+}
+
+.section-footer .container a {
+    color: white;
 }
 
 .section-footer .container p {
@@ -763,6 +768,10 @@ box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.71);
     
 }
 
+.perks-mobile {
+    display: none;
+}
+
 /* Section F */
 
 .section-f {
@@ -1071,6 +1080,15 @@ input[type=submit]:hover {
     transition: 300ms ease-in-out;
 }
 
+/* Section I */
+
+.section-i h1 {
+    padding-top: 45px;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
 /* Media Query */
 
 
@@ -1218,7 +1236,7 @@ input[type=submit]:hover {
     /* Perks */
 
     .section-e .perks{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
 
     /* Contact */
