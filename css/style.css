@@ -976,8 +976,100 @@ input[type=submit]:hover {
     background-color: var(--contact-color);
 }
 
+/* Portfolio */
 
+/* Section H */
 
+.section-h {
+
+}
+
+.section-h h1 {
+    padding-top: 45px;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.port-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding-bottom: 90px;
+    padding-top: 20px;
+}
+
+.port-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-h .port-item img {
+    width:400px;
+    height: 230px;
+    margin-left: auto; 
+    margin-right: auto;
+    padding: 15px 5px;
+}
+
+.section-h .port-item h3 {
+    color: white;
+    font-size: 1.8rem;
+    padding: 10px 0;
+}
+
+.section-h .port-item p {
+    color: white;
+    font-size: 1rem;
+    padding: 10px 35px;
+    
+}
+
+.port-img {
+    position: relative;
+}
+
+.port-img img {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.port-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.port-img:hover img {
+    opacity: 0.3;
+}
+
+.port-img:hover .port-middle {
+    opacity: 1;
+}
+
+.port-img-text {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 20px;
+    padding: 16px 48px;
+    transition: 300ms ease-in-out;
+}
+
+.port-img-text:hover {
+    background-color: var(--secondary-color-bold);
+    color: white;
+    font-size: 20px;
+    padding: 16px 48px;
+    
+    transition: 300ms ease-in-out;
+}
 
 /* Media Query */
 
@@ -1143,6 +1235,14 @@ input[type=submit]:hover {
     .contact-btn {
         width: 100%;
         margin-top: 8px;
+    }
+
+    /* Portfolio */ 
+
+    .port-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
     }
 
     /*Footer*/
