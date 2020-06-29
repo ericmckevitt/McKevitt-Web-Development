@@ -896,7 +896,7 @@ box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.44);
 
 }
 
-input[type=text], select, textarea {
+input[type=text], select, textarea, input[type=email] {
     width: 100%;
     padding: 12px;
     border: 1px solid rgb(175, 175, 175);
@@ -930,6 +930,22 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
+    background-color: var(--secondary-color-bold);
+    transition: 200ms ease-in-out;
+}
+
+.contact-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    transition: 200ms ease-in-out;
+}
+
+.contact-btn:hover {
     background-color: var(--secondary-color-bold);
     transition: 200ms ease-in-out;
 }

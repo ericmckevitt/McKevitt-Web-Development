@@ -33,21 +33,13 @@
     <section class="contact-section">
         <div class="container-contact">
             <h1>Contact</h1>
-            <form action="/action_page.php">
+            <form action="POST" data-netlify="true">
                 <div class="row">
                     <div class="col-25">
-                        <label for="fname">First Name</label>
+                        <label for="fname">Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="First name" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lname">Last Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Last name" required>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
                     </div>
                 </div>
                 <div class="row">
@@ -55,7 +47,7 @@
                         <label for="lname">Email</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="email" name="email" placeholder="Email" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
                 </div>
                 <div class="row">
@@ -64,23 +56,24 @@
                     </div>
                     <div class="col-75">
                         <select id="intention" name="intention">
-                            <option value="australia">I'd like to buy a website!</option>
-                            <option value="canada">I'd like to ask a question. </option>
-                            <option value="canada">I'd like to leave a comment. </option>
+                            <option value="select">Select</option>
+                            <option value="website">I'd like to buy a website!</option>
+                            <option value="question">I'd like to ask a question. </option>
+                            <option value="comment">I'd like to leave a comment. </option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="subject">Subject</label>
+                        <label for="subject">Message</label>
                     </div>
                     <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="How can I help you? "
+                        <textarea id="message" name="message" placeholder="How can I help you? "
                             style="height:200px"></textarea>
                     </div>
                 </div>
                 <div class="row">
-                    <input type="submit" value="Submit">
+                    <button class="contact-btn" type="submit" value="Submit">Submit</button>
                 </div>
             </form>
         </div>
