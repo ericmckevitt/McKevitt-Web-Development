@@ -1001,6 +1001,10 @@ input[type=submit]:hover {
         padding-bottom: 20px;
     }
 
+    .navbar .container li {
+        font-size: 16px;
+    }
+
     .section-a .container {
         grid-template-columns: 1fr;
         text-align: center;
