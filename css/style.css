@@ -1136,6 +1136,11 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 
+    .contact-btn {
+        width: 100%;
+        margin-top: 8px;
+    }
+
     /*Footer*/
 
     .section-footer {
