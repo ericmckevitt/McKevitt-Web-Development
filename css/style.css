@@ -1089,6 +1089,41 @@ input[type=submit]:hover {
     text-align: center;
 }
 
+/* ------------------------------ PROGRAMMING ------------------------------ */
+
+.project {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.project .project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .project-text h2 {
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+}
+
+.project .project-text p {
+    color: white;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.project1 {
+    width: 600px; 
+    height: 400px; 
+    overflow: hidden;
+}
+
+
 /* Media Query */
 
 
@@ -1269,6 +1304,27 @@ input[type=submit]:hover {
         margin-left: auto; 
         margin-right: auto;
         padding: 15px 5px;
+    }
+
+    /* Programming */
+
+    .project {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project .project-text h2 {
+        padding-top: 20px;
+    }
+
+    .project1 {
+        width: 360px; 
+        height: 240px; 
+        overflow: hidden;
+    }
+
+    .project iframe {
+        margin: auto;
     }
 
     /*Footer*/
