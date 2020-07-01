@@ -1332,7 +1332,13 @@ input[type=submit]:hover {
 
     .project2 {
         width: 360px; 
-        height: 269px; 
+        height: 482px; 
+
+
+        /*  width: 360px;
+            height: 240px;
+        */
+
         overflow: hidden;
     }
 
